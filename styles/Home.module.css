@@ -5,8 +5,22 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: url("https://images.pexels.com/photos/4737484/pexels-photo-4737484.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  background-repeat: no-repeat;
 }
-
+.heroImage {
+  background-image: url("https://images.pexels.com/photos/4737484/pexels-photo-4737484.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"); /* The image used */
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 100vh;
+  overflow: auto;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.h1 {
+  color: white;
+  justify-content: center;
+}
 .main {
   padding: 5rem 0;
   flex: 1;
