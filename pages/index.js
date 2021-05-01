@@ -1,10 +1,20 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import ReactPlayer from 'react-player';
 
 export default function Home() {
   return (
-    <div className={styles.heroImage}>
-        <h1 className={styles.h1}>Welcome to my Website</h1>
+    <div className='player-wrapper'>
+      <ReactPlayer
+        className='react-player fixed-bottom'
+        url='video.mp4'
+        width='100%'
+        height='100%'
+        controls={false}
+        loop = {true}
+        playing ={true}
+      />
     </div>
   )
 }
+
+
