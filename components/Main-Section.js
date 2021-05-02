@@ -1,4 +1,3 @@
-import ReactPlayer from 'react-player';
 
 
 const Mainsection = () => {
@@ -6,9 +5,9 @@ const Mainsection = () => {
         <section class="showcase">
             <header>
                 <h2 class="logo">Portfolio</h2>
-                {/* <div class="toggle active"></div> */}
+                <div class="toggle"></div>
             </header>
-            <video src="video.MP4" muted loop autoPlay></video>
+            <video src="/video.MP4" muted loop autoPlay></video>
             <div class="overlay"></div>
             <div class="text">
                 <h2>Welcome!</h2>
@@ -20,11 +19,12 @@ const Mainsection = () => {
                 <a href="#">Projects</a>
             </div>
             <ul class="social">
-                <li><a href="#"><img src="https://i.ibb.co/YNLnb4L/rsz-11rsz-rsz-linkedin-1.png"/></a></li>
-                <li><a href="#"><img src="https://i.ibb.co/1J0gXP8/rsz-1githubnew0205.png"/></a></li>
-                
+                <li><a href="#"><img src="https://i.ibb.co/YNLnb4L/rsz-11rsz-rsz-linkedin-1.png" /></a></li>
+                <li><a href="#"><img src="https://i.ibb.co/1J0gXP8/rsz-1githubnew0205.png" /></a></li>
+
             </ul>
         </section>
+        
     )
 }
 
