@@ -12,17 +12,6 @@ app.prepare().then(() => {
 
     server.use(express.static(path.join(__dirname, 'public')));
   
-    server.get('/a', (req, res) => {
-      return app.render(req, res, '/a', req.query)
-    })
-  
-    server.get('/b', (req, res) => {
-      return app.render(req, res, '/b', req.query)
-    })
-  
-    server.all('*', (req, res) => {
-      return handle(req, res)
-    })
   
     server.listen(port, (err) => {
       if (err) throw err

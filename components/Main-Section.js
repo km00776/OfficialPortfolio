@@ -7,7 +7,7 @@ const Mainsection = () => {
                 <h2 class="logo">Portfolio</h2>
                 <div class="toggle"></div>
             </header>
-            <video src="/video.MP4" muted loop autoPlay></video>
+            <video src="videos/video.MP4" muted loop autoPlay></video>
             <div class="overlay"></div>
             <div class="text">
                 <h2>Welcome!</h2>
