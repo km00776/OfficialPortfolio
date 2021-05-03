@@ -1,4 +1,6 @@
 
+
+
 const Mainsection = () => {
     return (
         <section class="showcase">
@@ -6,7 +8,7 @@ const Mainsection = () => {
                 <h2 class="logo">Portfolio</h2>
                 <div class="toggle"></div>
             </header>
-            <video src="./video.mp4" autoPlay loop></video>
+            <video src="./video.mp4" autoPlay muted    loop></video>
             <div class="overlay"></div>
             <div class="text">
                 <h2>Welcome!</h2>
