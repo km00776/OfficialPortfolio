@@ -1,7 +1,9 @@
 const ProjectSection = () => {
     return(
-        <section>
-            
+        <section id='project'>
+            <Head>
+                <h2>Project</h2>
+            </Head>
         </section>
     )
 }
