@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const ProjectSection = () => {
     return(
-
+        
         <section id="project">
                 <h2>Project</h2>
                 <h2>Project</h2>
@@ -11,6 +11,7 @@ const ProjectSection = () => {
                 <h2>Project</h2>
                 <h2>Project</h2>
         </section>
+        
 
     )
 }

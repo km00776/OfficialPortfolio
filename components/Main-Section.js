@@ -1,3 +1,4 @@
+import ProjectSection from "./Project-Section"
 
 
 
@@ -28,6 +29,7 @@ const Mainsection = () => {
                         <li><a href="https://github.com/km00776?tab=repositories"><img src="https://i.ibb.co/1J0gXP8/rsz-1githubnew0205.png" /></a></li>
                     </ul>
                 </section>
+                <ProjectSection />
             </div>
         </>
 
