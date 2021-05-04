@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
 
 html,
 body {
@@ -21,7 +21,7 @@ a {
 }
 
 .showcase {
-  positioN: absolute;
+  position: relative;
   right: 0;
   width: 100%;
   min-height: 100vh;
@@ -35,8 +35,7 @@ a {
   transition: 0.5s;
 }
 
-.showcase.active
-{
+.showcase.active {
   right: 300px;
 }
 
@@ -50,18 +49,17 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-} 
+}
 
 .logo {
   text-transform: uppercase;
-
 }
 
 .toggle {
   position: relative;
   width: 60px;
   height: 60px;
-  background: url('/menu.png');
+  background: url("/menu.png");
   background-repeat: no-repeat;
   background-size: 30px;
   background-position: center;
@@ -69,15 +67,14 @@ a {
 }
 
 .toggle.active {
-  background: url('/menu.png');
+  background: url("/menu.png");
   background-repeat: no-repeat;
   background-size: 25px;
   background-position: center;
   cursor: pointer;
 }
 
-.menu
-{
+.menu {
   position: absolute;
   top: 0;
   right: 0;
@@ -87,27 +84,22 @@ a {
   justify-content: center;
   align-items: center;
 }
-.menu ul
-{
+.menu ul {
   position: relative;
 }
-.menu ul li
-{
+.menu ul li {
   list-style: none;
 }
-.menu ul li a
-{
+.menu ul li a {
   text-decoration: none;
   font-size: 24px;
   color: #111;
 }
-.menu ul li a:hover
-{
-  color: #03a9f4; 
+.menu ul li a:hover {
+  color: #03a9f4;
 }
 
-.showcase video
-{
+.showcase video {
   position: absolute;
   top: 0;
   left: 0;
@@ -154,15 +146,14 @@ a {
   margin-top: 10px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  transition: 0.2s; 
+  transition: 0.2s;
 }
 
 .text a:hover {
   letter-spacing: 6px;
 }
 
-.toggle
-{
+.toggle {
   position: relative;
   width: 60px;
   height: 60px;
@@ -172,8 +163,7 @@ a {
   background-position: center;
   cursor: pointer;
 }
-.toggle.active
-{
+.toggle.active {
   background: url(https://i.ibb.co/rt3HybH/close.png);
   background-repeat: no-repeat;
   background-size: 25px;
@@ -188,11 +178,9 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 .social li {
   list-style: none;
-
 }
 .social li a {
   display: inline-block;
@@ -203,13 +191,11 @@ a {
   transition: 0.5s;
 }
 
-.social li a:hover
-{
+.social li a:hover {
   transform: scale(0.9) translateY(-30px);
   background-image: none;
   filter: invert(1);
 }
-
 
 .overlay {
   position: absolute;
@@ -218,22 +204,18 @@ a {
   width: 100%;
   height: 100%;
   background-color: royalblue;
-  mix-blend-mode: overlay;  
+  mix-blend-mode: overlay;
 }
 
-@media (max-width: 991px)
-{
+@media (max-width: 991px) {
   .showcase,
-  .showcase header
-  {
+  .showcase header {
     padding: 40px;
   }
-  .text h2
-  {
+  .text h2 {
     font-size: 3em;
   }
-  .text h3
-  {
+  .text h3 {
     font-size: 2em;
   }
 }
