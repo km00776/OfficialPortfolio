@@ -1,5 +1,4 @@
 
- const withVideos = require('next-videos');
 module.exports = {
     exportPathMap: function () {
     return {
@@ -21,3 +20,4 @@ module.exports = {
       return config
   }
 }
+
