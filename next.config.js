@@ -1,4 +1,5 @@
 
+ const withVideos = require('next-videos');
 module.exports = {
     exportPathMap: function () {
     return {
@@ -7,4 +8,16 @@ module.exports = {
   },
 }
 
+const webpack = require('webpack')
 
+module.exports = {
+  webpack: (config, { dev }) => {
+      config.plugins.push(
+          new webpack.ProvidePlugin({
+              '$': 'jquery',
+              'jQuery': 'jquery',
+          })
+      )
+      return config
+  }
+}

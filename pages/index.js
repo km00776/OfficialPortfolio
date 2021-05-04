@@ -13,8 +13,9 @@ export default function Home() {
         <title>Portfolio</title>
       </Head>
       <Mainsection />
+ 
       <Menu />
-      <ProjectSection />
+
     </div>
   )
 }
