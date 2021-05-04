@@ -3,22 +3,28 @@ import ProjectSection from "./Project-Section";
 import $ from 'jquery';
 
 
+
+
 const Mainsection = () => {
-var jsdom = require('jsdom');
-$('.text a').on('click', function (e) {
+if(typeof window === 'undefined') {
+  var jsdom = require('jsdom');
+   $ = require('jquery')(new jsdom.JSDOM().window);
+  $('.showcase project').on('click', function (e) {
   if (this.hash !== '') {
     e.preventDefault();
 
     const hash = this.hash;
-
+    console.log(hash);
     $('html, body')
       .animate({
         scrollTop: $(hash).offset().top
       },800);
   }
 });
+}
     return (
          <>
+        <div class="container">
         <section class="showcase">
             <header>
                 <h2 class="logo">Portfolio</h2>
@@ -41,6 +47,7 @@ $('.text a').on('click', function (e) {
             </ul>
         </section>
         <ProjectSection />
+        </div>
      </>
         
     
