@@ -204,6 +204,13 @@ a {
   max-width: 700px;
 }
 
+.project {
+  color: #CC2E5D;
+  position:relative;
+  justify-content: center;
+  text-align:center;
+}
+
 .text a {
   display: inline-block;
   font-size: 1em;

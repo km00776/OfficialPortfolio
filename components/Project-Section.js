@@ -2,13 +2,16 @@ import Head from 'next/head';
 import Link from 'next/link'
 
 const ProjectSection = () => {
-    return(
-  
+    return (
+
         <section className="ProjectSection" id="project">
-                <h2>Project</h2>
+            <div className="title">
+                <h2 className="project">Project</h2>
+            </div>
+
         </section>
-    
-    
+
+
     )
 }
 
