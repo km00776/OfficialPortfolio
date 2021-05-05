@@ -13,7 +13,7 @@ const Mainsection = () => {
                         <h2 class="logo">Portfolio</h2>
                         <div class="toggle"></div>
                     </header>
-                    <video src="./video.mp4" muted loop autoplay></video>
+                    <video src="./video.MP4" muted loop autoplay></video>
                     <div class="overlay"></div>
                     <div class="text">
                         <h2>Welcome!</h2>
