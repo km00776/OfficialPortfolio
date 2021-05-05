@@ -1,3 +1,4 @@
+import Header from "./Header";
 import ProjectSection from "./Project-Section"
 
 
@@ -9,11 +10,8 @@ const Mainsection = () => {
         <>
             <div class="container">
                 <section class="showcase">
-                    <header>
-                        <h2 class="logo">Portfolio</h2>
-                        <div class="toggle"></div>
-                    </header>
-                    <video src="./bg.mp4" autoplay loop></video>
+                    <Header />
+                    <video src="./bg.mp4" autoplay="autoplay" muted loop />
                     <div class="overlay"></div>
                     <div class="text">
                         <h2>Welcome!</h2>
