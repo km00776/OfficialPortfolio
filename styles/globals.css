@@ -89,7 +89,7 @@ a {
 .animation {
   font-weight: 900;
   text-decoration: none;
-  background: linear-gradient(to right, #ccc 50%, #ff5858 50%, #cc2e5d);
+  background: linear-gradient(to right, #ccc 50%, royalblue 50%, #cc2e5d);
   background-size: 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -117,6 +117,9 @@ a {
 
 .logo {
   text-transform: uppercase;
+  background: linear-gradient(to right, #ccc 50%, royalblue 50%, #cc2e5d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .toggle {
@@ -171,27 +174,39 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.8;
+  opacity: 0.2;
 }
+/**
+  opacity used to be 0.8
+**/
 
 .text {
   position: relative;
   z-index: 10;
 }
 
+
+
+
 .text h2 {
   font-size: 4em;
   font-weight: 800;
   line-height: 1em;
   color: #fff;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
+}
+
+.text span {
+  background: royalblue;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .text h3 {
   font-size: 5em;
   font-weight: 800;
   line-height: 1em;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 .text p {
@@ -199,10 +214,11 @@ a {
   margin: 20px 0;
   font-weight: 400;
   max-width: 700px;
+  color:  #ccc;
 }
 
 .project {
-  color: white;
+  color:  #ccc;
   position: relative;
   justify-content: center;
   text-align: center;

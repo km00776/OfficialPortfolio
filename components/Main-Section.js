@@ -14,8 +14,8 @@ const Mainsection = () => {
                     <video src="./bg.mp4" autoplay="autoplay" muted loop />
                     <div class="overlay"></div>
                     <div class="text">
-                        <h2>Welcome!</h2>
-                        <h3>My name is <b>Karthikan</b></h3>
+                        <h2>Hi!</h2>
+                        <h3>my name is <span>Karthikan</span></h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
