@@ -5,6 +5,7 @@ const ProjectSection = () => {
     return (
 
         <section className="ProjectSection" id="project">
+            <div className="overlay"></div>
             <div className="title">
                 <h2 className="project">Project</h2>
             </div>
