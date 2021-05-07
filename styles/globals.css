@@ -185,9 +185,6 @@ a {
   z-index: 10;
 }
 
-
-
-
 .text h2 {
   font-size: 4em;
   font-weight: 800;
@@ -206,7 +203,28 @@ a {
   font-size: 5em;
   font-weight: 800;
   line-height: 1em;
+
   /* text-transform: uppercase; */
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
 }
 
 .text p {
@@ -214,11 +232,11 @@ a {
   margin: 20px 0;
   font-weight: 400;
   max-width: 700px;
-  color:  #ccc;
+  color: #ccc;
 }
 
 .project {
-  color:  #ccc;
+  color: #ccc;
   position: relative;
   justify-content: center;
   text-align: center;
