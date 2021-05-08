@@ -50,9 +50,31 @@ a {
 	margin:10px;
 	padding:10px;
   border-radius: 25px;
-  display: flex ;
+  display: grid;
   background-color: #ccc;
+  justify-content: center;
 }
+
+.imgContainer img {
+  justify-content:   center;
+  max-width: 400px;
+  max-height: 400px;
+  margin-top: -20px;
+  border-radius: 25px;
+  display: grid;
+
+}
+.ProjectTitle {
+  display: grid;
+}
+
+.ProjectTitle h3 {
+  text-align: center;
+  color: #111;
+  margin-bottom: 140px;
+}
+
+
 .Projects {
   display:flex;
   margin-top: 80px;
@@ -218,26 +240,6 @@ a {
   /* text-transform: uppercase; */
 }
 
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: orange;
-  }
-}
-
 .text p {
   font-size: 1.1em;
   margin: 20px 0;
@@ -287,6 +289,14 @@ a {
   background-position: center;
   cursor: pointer;
 }
+
+.ProjectDetails p{
+  color:black;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+}
+
 .container {
   width: 100%;
   height: 100%;
@@ -348,7 +358,6 @@ a {
      margin: auto;
      align-content: center;
      flex-wrap: wrap;
-
   }
 
   .projectContainer {
@@ -358,6 +367,19 @@ a {
     display:  flex; 
     flex-flow: column;
     background-color: #ccc;
+  }
+
+  .imgContainer img {
+    justify-content:   center;
+    max-width: contain;
+    max-height: contain;
+    margin-top: -20px;
+    border-radius: 25px;
+    display: grid;
+  
+  }
+  .ProjectTitle {
+    display: grid;
   }
 
 }
@@ -375,7 +397,7 @@ a {
   }
 
   .Projects {
-     display: flex; flex-flow: row-reverse;
+     display: flex; flex-flow: column-reverse;
      margin: auto;
      align-content: center;
      flex-wrap: wrap;
@@ -390,5 +412,19 @@ a {
     flex-flow: row;
     background-color: #ccc;
   }
+
+  .imgContainer img {
+    justify-content:   center;
+    max-width: contain;
+    max-height: contain;
+    margin-top: -20px;
+    border-radius: 25px;
+    display: grid;
+  
+  }
+  .ProjectTitle {
+    display: grid;
+  }
+
 
 }
