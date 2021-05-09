@@ -46,9 +46,9 @@ a {
 
 .projectContainer {
   width: 400px;
-	height:500px;
-	margin:10px;
-	padding:10px;
+  height: 500px;
+  margin: 10px;
+  padding: 10px;
   border-radius: 25px;
   display: grid;
   background-color: #ccc;
@@ -56,13 +56,12 @@ a {
 }
 
 .imgContainer img {
-  justify-content:   center;
+  justify-content: center;
   max-width: 400px;
   max-height: 400px;
   margin-top: -20px;
   border-radius: 25px;
   display: grid;
-
 }
 .ProjectTitle {
   display: grid;
@@ -74,11 +73,9 @@ a {
   margin-bottom: 140px;
 }
 
-
 .Projects {
-  display:flex;
-  margin-top: 80px;
-  
+  display: flex;
+  margin-top: 40px;
 }
 
 * {
@@ -290,8 +287,8 @@ a {
   cursor: pointer;
 }
 
-.ProjectDetails p{
-  color:black;
+.ProjectDetails p {
+  color: black;
   font-weight: 600;
   display: flex;
   justify-content: center;
@@ -353,35 +350,34 @@ a {
   }
 
   .Projects {
-    display: flex; flex-flow: column-reverse;
-    
-     margin: auto;
-     align-content: center;
-     flex-wrap: wrap;
+    display: flex;
+    flex-flow: column-reverse;
+
+    margin: auto;
+    align-content: center;
+    flex-wrap: wrap;
   }
 
   .projectContainer {
     width: 250px;
-    height:400px;
+    height: 400px;
     border-radius: 25px;
-    display:  flex; 
+    display: flex;
     flex-flow: column;
     background-color: #ccc;
   }
 
   .imgContainer img {
-    justify-content:   center;
+    justify-content: center;
     max-width: contain;
     max-height: contain;
     margin-top: -20px;
     border-radius: 25px;
     display: grid;
-  
   }
   .ProjectTitle {
     display: grid;
   }
-
 }
 
 @media (max-width: 1025px) {
@@ -397,34 +393,31 @@ a {
   }
 
   .Projects {
-     display: flex; flex-flow: column-reverse;
-     margin: auto;
-     align-content: center;
-     flex-wrap: wrap;
-
+    display: flex;
+    flex-flow: column-reverse;
+    margin: auto;
+    align-content: center;
+    flex-wrap: wrap;
   }
 
   .projectContainer {
     width: 350px;
-    height:400px;
+    height: 400px;
     border-radius: 25px;
-    display:  flex; 
+    display: flex;
     flex-flow: row;
     background-color: #ccc;
   }
 
   .imgContainer img {
-    justify-content:   center;
+    justify-content: center;
     max-width: contain;
     max-height: contain;
     margin-top: -20px;
     border-radius: 25px;
     display: grid;
-  
   }
   .ProjectTitle {
     display: grid;
   }
-
-
 }

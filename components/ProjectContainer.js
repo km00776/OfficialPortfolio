@@ -6,15 +6,44 @@ import CardActions from '@material-ui/core/CardActions';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
+import { Grid } from '@material-ui/core';
+import getResolution from '../utils/ScreenSize';
 
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        maxWidth: 500,
-        flexGrow: 1,
-        marginRight: 20,
-        marginLeft: 20,
-        marginTop: 20,
+        [theme.breakpoints.only('lg')]: {
+            width: 400,
+            flexGrow: 0,
+            marginRight: 8,
+            marginLeft: 8,
+            marginTop: 20,
+        },
+        [theme.breakpoints.only('md')]: {
+            width: 400,
+            flexGrow: 0,
+            marginRight: 8,
+            marginLeft: 8,      
+            marginTop: 20,
+        },
+        [theme.breakpoints.only('xl')]: {
+            width: 400,
+            flexGrow: 0,
+            marginRight: 20,
+            marginLeft: 20,
+            marginTop: 20,
+            justifyContent: 'center',
+            display:'grid'
+        },
+        [theme.breakpoints.down('sm')]: {
+            width: 350,
+            flexGrow: 0,
+            marginRight: 8,
+            marginLeft: 8,
+            marginTop: 20,
+            display: 'grid'
+        },
+     
    
 
 
@@ -29,13 +58,12 @@ const ProjectContainer = () => {
     const classes = useStyles();
     return (
         <>
-            <Card style= {{backgroundColor:"whitesmoke"}}className={classes.root}>
+            <Card className={classes.root}>
                 <CardActionArea>
                     <CardMedia
                         component="img"
                         alt="Project Image"
                         height="440"
-                        width="300"
                         image="./testimg.jpg"
                         title="Project Image"
                     />
@@ -51,7 +79,7 @@ const ProjectContainer = () => {
                     </CardContent>
                 </CardActionArea>
                 <CardActions>
-                    <Button size="small" color="primary">
+                    <Button onClick={getResolution} size="medium" style={{background: 'linear-gradient(45deg, #cc2e5d 30%, royalblue 90%)', color:'whitesmoke'}}>
                         Documentation
                     </Button>
                 </CardActions>
