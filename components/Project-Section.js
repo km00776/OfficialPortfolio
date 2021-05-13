@@ -31,7 +31,6 @@ const ResponsiveContainer = () => {
 
 
 const ProjectSection = () => {
-
     const [size, setSize] = useState(true);
     useEffect(() => {
         let widthMatch = window.matchMedia("(min-width: 1920px)");
