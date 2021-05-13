@@ -7,7 +7,7 @@ import ProjectContainer from './ProjectContainer';
 
 const ResponsiveContainer = () => {
     const [size, setSize] = useState(false);
-    useEffect(() => {
+     if(typeof window !== undefined) {
         let widthMatch = window.matchMedia("(min-width: 1920px)");
         widthMatch.addEventListener("change", function (mm) {
             if (mm.matches) {
@@ -17,7 +17,29 @@ const ResponsiveContainer = () => {
                 setSize(false);
             }
         });
-    })
+    }
+
+    if(size === true) {
+        return(
+            <>
+            <ProjectContainer />
+            <ProjectContainer />
+            <ProjectContainer />
+            <ProjectContainer />
+            </>
+        )
+    }
+    else {
+        return (
+            <>
+            <ProjectContainer />
+            <ProjectContainer />
+            <ProjectContainer />
+            </>
+        )
+
+    }
+    
 
 
 }
@@ -32,18 +54,7 @@ const ResponsiveContainer = () => {
 
 const ProjectSection = () => {
 
-    const [size, setSize] = useState(true);
-    useEffect(() => {
-        let widthMatch = window.matchMedia("(min-width: 1920px)");
-        widthMatch.addEventListener("change", function (mm) {
-            if (mm.matches) {
-                setSize(true);
-            }
-            else {
-                setSize(false);
-            }
-        });
-    })
+    
 
     return (
         <section className="ProjectSection" id="project">
@@ -52,8 +63,7 @@ const ProjectSection = () => {
                 <h2 className="project">Projects</h2>
             </div>
             <div className="Projects">
-                {size ? <> <ProjectContainer /> <ProjectContainer /> <ProjectContainer /> <ProjectContainer /> </> : <> <ProjectContainer /> <ProjectContainer /> <ProjectContainer /> </>}
-
+             {<ResponsiveContainer />}
             </div>
         </section>
 
