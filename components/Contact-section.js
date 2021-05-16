@@ -23,6 +23,8 @@ const ContactForm = () => {
     <div className={classes.root}>
         <Paper style = {{backgroundColor: '#1322'}} elevation = {3}>
             <InputField />
+            <InputField />
+            <InputField />
         </Paper>
     </div>
     )
@@ -36,6 +38,9 @@ const ContactSection = () =>  {
             <div className="title">
                 <h2 className="project">Contact</h2>
                 <ContactForm />
+            </div>
+            <div className="image">
+                <img src= "./ufo.svg"></img>
             </div>
         </section>
     )

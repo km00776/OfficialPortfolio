@@ -43,7 +43,10 @@ a {
   background-color: #111;
   mix-blend-mode: overlay;
 }
-
+.image {
+  float: right;
+  top: 300px;
+}
 .ContactSection {
   position: relative;
   right: 0;
