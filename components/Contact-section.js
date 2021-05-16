@@ -1,7 +1,7 @@
 import React, { useLayoutEffect } from 'react';
 import {makeStyles} from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
-
+import InputField from './InputField';
 
 const ContactForm = () => {
     const useStyles = makeStyles((theme) => ({
@@ -11,7 +11,7 @@ const ContactForm = () => {
           '& > *': {
             margin: theme.spacing(2),
             marginTop: theme.spacing(5),
-            width: theme.spacing(200),
+            width: theme.spacing(90),
             height: theme.spacing(100),
           },
           
@@ -21,9 +21,9 @@ const ContactForm = () => {
     const classes = useStyles();
     return (
     <div className={classes.root}>
-        <Paper style = {{backgroundColor: '#1322'}} elevation = {3} 
-                
-        />
+        <Paper style = {{backgroundColor: '#1322'}} elevation = {3}>
+            <InputField />
+        </Paper>
     </div>
     )
 

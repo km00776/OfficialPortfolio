@@ -6,7 +6,8 @@ import ProjectContainer from './ProjectContainer';
 
 
 const ResponsiveContainer = () => {
-    const [size, setSize] = useState(false);
+     const [size, setSize] = useState(true);
+     
      if(typeof window !== "undefined") {
         let widthMatch = window.matchMedia("(min-width: 1920px)");
         widthMatch.addEventListener("change", function (mm) {
@@ -18,6 +19,8 @@ const ResponsiveContainer = () => {
             }
         });
     }
+
+   
 
     if(size === true) {
         return(
@@ -60,7 +63,7 @@ const ProjectSection = () => {
                 <h2 className="project">Projects</h2>
             </div>
             <div className="Projects">
-             {<ResponsiveContainer />}
+                 <ResponsiveContainer />
             </div>
         </section>
 
