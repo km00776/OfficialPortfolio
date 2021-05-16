@@ -7,7 +7,7 @@ import ProjectContainer from './ProjectContainer';
 
 const ResponsiveContainer = () => {
     const [size, setSize] = useState(false);
-     if(typeof window !== undefined) {
+     if(typeof window !== "undefined") {
         let widthMatch = window.matchMedia("(min-width: 1920px)");
         widthMatch.addEventListener("change", function (mm) {
             if (mm.matches) {
