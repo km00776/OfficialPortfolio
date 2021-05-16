@@ -53,9 +53,6 @@ const ResponsiveContainer = () => {
 
 
 const ProjectSection = () => {
-
-    
-
     return (
         <section className="ProjectSection" id="project">
             <div className="overlay"></div>
