@@ -8,6 +8,7 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import { Grid } from '@material-ui/core';
 import getResolution from '../utils/ScreenSize';
+import Mbutton from './Button';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -79,9 +80,7 @@ const ProjectContainer = () => {
                     </CardContent>
                 </CardActionArea>
                 <CardActions>
-                    <Button onClick={getResolution} size="medium" style={{background: 'linear-gradient(45deg, #cc2e5d 30%, royalblue 90%)', color:'whitesmoke'}}>
-                        Documentation
-                    </Button>
+                    <Mbutton text = "Documentation"/> 
                 </CardActions>
             </Card>
         </>

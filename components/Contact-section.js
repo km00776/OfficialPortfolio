@@ -2,6 +2,7 @@ import React, { useLayoutEffect } from 'react';
 import {makeStyles} from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import InputField from './InputField';
+import Mbutton from './Button';
 
 const ContactForm = () => {
     const useStyles = makeStyles((theme) => ({
@@ -13,23 +14,23 @@ const ContactForm = () => {
             marginTop: theme.spacing(5),
             width: theme.spacing(90),
             height: theme.spacing(100),
-          },
-          
+          }, 
         },
-
       }));
     const classes = useStyles();
     return (
     <div className={classes.root}>
-        <Paper style = {{backgroundColor: '#1322'}} elevation = {3}>
+        <Paper style = {{backgroundColor: '##FFFFFF'}} elevation = {3}>
             <InputField />
             <InputField />
             <InputField />
+            <div className="">
+                <Mbutton text="Submit"/>
+            </div>
         </Paper>
     </div>
-    )
-
-    }
+    );
+}
 
 const ContactSection = () =>  {
     return(
