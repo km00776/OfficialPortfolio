@@ -55,7 +55,7 @@ const useStyles = makeStyles((theme) => ({
 
 
 
-const ProjectContainer = () => {
+const ProjectContainer = (props) => {
     const classes = useStyles();
     return (
         <>
@@ -64,12 +64,13 @@ const ProjectContainer = () => {
                     <CardMedia
                         component="img"
                         alt="Project Image"
-                        height="440"
-                        image="./testimg.jpg"
+                        height="400"
+                        width="220"
+                        image={props.image}
                         title="Project Image"
                     />
                     <CardContent>
-                        <h1>Platform</h1>
+                        <h1>{props.title ? props.title : "Test" }</h1>
                         {/* <Typography gutterBottom variant="h5" component="h2">
                             Platform
                         </Typography> */}

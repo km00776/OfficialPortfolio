@@ -25,10 +25,10 @@ const ResponsiveContainer = () => {
     if(size === true) {
         return(
             <>
-            <ProjectContainer />
-            <ProjectContainer />
-            <ProjectContainer />
-            <ProjectContainer />
+            <ProjectContainer title= "Stagpus" image="./fyp.png"/>
+            <ProjectContainer title= "Platform" image="./passwordplatform.png" />
+            <ProjectContainer title= "Plagiarism Checker" image="./Plag.png" />
+           <ProjectContainer title= "Plagiarism Checker" image="./Plag.png" />
             </>
         )
     }
