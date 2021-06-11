@@ -57,6 +57,21 @@ const useStyles = makeStyles((theme) => ({
 
 const ProjectContainer = (props) => {
     const classes = useStyles();
+    const[open, setOpen] = React.useState(false);
+
+     const handleClick = () => {
+        setOpen(true);
+     };
+
+     const handleClose = (event, reason) => {
+            if (reason === 'clickaway') {
+                  return;
+            }
+        setOpen (false);
+    };
+
+
+    
     return (
         <>
             <Card className={classes.root}>
@@ -81,7 +96,8 @@ const ProjectContainer = (props) => {
                     </CardContent>
                 </CardActionArea>
                 <CardActions>
-                    <Mbutton text = "Documentation"/> 
+                    <Mbutton onClick={handleClick} text = "Documentation"/>
+                    <CustomizedSnackbars open = {open} /> 
                 </CardActions>
             </Card>
         </>
