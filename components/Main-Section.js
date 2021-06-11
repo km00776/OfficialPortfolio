@@ -28,7 +28,7 @@ const Mainsection = () => {
                     </ul>
                 </section>
                 <ProjectSection />
-                <ContactSection />
+
             </div>
         </>
 
