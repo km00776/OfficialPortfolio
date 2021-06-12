@@ -3,7 +3,7 @@ import Snackbar from '@material-ui/core/Snackbar';
 import MuiAlert from '@material-ui/lab/Alert';
 import { makeStyles } from '@material-ui/core/styles';
 
-const Alert = () => {
+const Alert = (props) => {
     return <MuiAlert elevation={6} variant="filled" {...props} />;
 }
 
@@ -21,7 +21,7 @@ export default function CustomizedSnackbars(props) {
 
   return (
     <div className={classes.root}>
-      <Snackbar open={props.open} autoHideDuration={6000} >
+      <Snackbar open={props.open} autoHideDuration={2000} >
         <Alert severity="info">
           Coming soon!
         </Alert>

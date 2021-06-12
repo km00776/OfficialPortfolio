@@ -98,7 +98,7 @@ const ProjectContainer = (props) => {
                 </CardActionArea>
                 <CardActions>
                     <Mbutton onClick={handleClick} text = "Documentation"/>
-                    <CustomizedSnackbars />
+                    <CustomizedSnackbars open = {open} />
                 </CardActions>
             </Card>
         </>
