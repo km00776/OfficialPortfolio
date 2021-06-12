@@ -9,7 +9,8 @@ import Button from '@material-ui/core/Button';
 import { Grid } from '@material-ui/core';
 import getResolution from '../utils/ScreenSize';
 import Mbutton from './Button';
-
+import { useState } from 'react';
+import CustomizedSnackbars from './SnackBar';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -57,7 +58,7 @@ const useStyles = makeStyles((theme) => ({
 
 const ProjectContainer = (props) => {
     const classes = useStyles();
-    const[open, setOpen] = React.useState(false);
+    const[open, setOpen] = useState(false);
 
      const handleClick = () => {
         setOpen(true);
@@ -97,7 +98,7 @@ const ProjectContainer = (props) => {
                 </CardActionArea>
                 <CardActions>
                     <Mbutton onClick={handleClick} text = "Documentation"/>
-                    <CustomizedSnackbars open = {open} /> 
+                    <CustomizedSnackbars />
                 </CardActions>
             </Card>
         </>
